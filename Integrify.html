@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Integrify</title>
+   <script type="text/javascript" src="Script_Integrify.js"></script>
+   <link href="CSS_Integrify.css" rel="stylesheet">
+</head>
+<body onload="autofill()">
+    <div class="Main_div">
+              <header>
+                <h1 class="onvan">Integrify</h1>
+              </header>
+              <div class="class2">
+                <h1 class="explainer">List of Participants</h1>
+    <div class="Layer1">
+        <div class="layer2">
+            <form>
+            <input id="Name_input" type="text" placeholder="Full name" required/>
+            <input id="email_input" type="email" placeholder="Email address" required/>
+            <input id="number_input" type="number" placeholder="Phone number" required/>
+            <button class="Add_Button" onClick=addRow() >Add new</button>
+            </form>
+        </div>
+        <div class="Div_Table">
+    <table id="mytable">
+        <tbody>
+        <tr class="Table_head">
+            <th width="162px" onclick="sortTable(0)"><p id="cul_1">Name</p></th>
+            <th width="325px" onclick="sortTable(1)"><p id="cul_2">E-mail address</p></th>
+            <th width="200px" onclick="sortTable(2)"><p id="cul_3">Phone number</p></th>
+            <th class="invisible_column">Invisible</th>
+        </tr>
+            
+       
+            </tbody>
+    </table>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
